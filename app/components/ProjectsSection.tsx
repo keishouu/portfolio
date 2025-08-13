@@ -22,7 +22,8 @@ const projects = [
     image: "/PourDecisions.png",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://keishouu.github.io/pour-decision/",
-    figmaLink: "https://www.figma.com/design/another-figma-file-id",
+    figmaLink:
+      "https://www.figma.com/design/iyeGcjnUdm9W11cGwAl8Ze/Friends-Card-Games---Pour-Decisions?t=Rov4hdWpMLbpq2hp-1",
   },
   {
     title: "MISDesk",
