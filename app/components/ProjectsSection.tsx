@@ -33,6 +33,16 @@ const projects = [
     tags: ["React", "Next.js", "SupaBase", "Tailwind CSS", "Gemini AI"],
     link: "https://eac-misd.vercel.app/",
   },
+  {
+    title: "Real Estate",
+    description:
+      "Revamped an existing real estate website homepage with a modern, responsive design that enhances usability, branding, and seamless navigation across all devices.",
+    image: "/real-estate-thumbnail.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://keishouu.github.io/real-estate/",
+    figmaLink:
+      "https://www.figma.com/design/8JlGubg6kCnClfmdASYGYq/Real-Estate-Homepage-Revamp?node-id=73-1011&t=muzoR7SHJHVlVSt8-1",
+  },
 ];
 
 export default function ProjectsSection() {
