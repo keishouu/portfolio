@@ -141,7 +141,7 @@ export default function ContactSection() {
                   href="https://github.com/keishouu"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group flex items-center justify-center p-4 bg-blue-50 hover:bg-blue-100 rounded-xl border border-blue-200 transition-all duration-300"
+                  className="group flex items-center justify-center p-4 bg-purple-50 hover:bg-purple-100 rounded-xl border border-purple-200 transition-all duration-300"
                 >
                   <svg
                     className="w-6 h-6 text-orange-600 group-hover:text-orange-700 transition-colors"
@@ -169,7 +169,7 @@ export default function ContactSection() {
                   href="https://www.facebook.com/roni.jem.bueno"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group flex items-center justify-center p-4 bg-pink-50 hover:bg-pink-100 rounded-xl border border-pink-200 transition-all duration-300"
+                  className="group flex items-center justify-center p-4 bg-purple-50 hover:bg-purple-100 rounded-xl border border-purple-200 transition-all duration-300"
                 >
                   <svg
                     className="w-6 h-6 text-blue-600 group-hover:text-blue-700 transition-colors"
