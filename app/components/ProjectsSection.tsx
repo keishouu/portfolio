@@ -43,6 +43,26 @@ const projects = [
     figmaLink:
       "https://www.figma.com/design/8JlGubg6kCnClfmdASYGYq/Real-Estate-Homepage-Revamp?node-id=73-1011&t=muzoR7SHJHVlVSt8-1",
   },
+  {
+    title: "Recipe Management System Dashboard",
+    description:
+      "A responsive recipe management system design featuring a clean dashboard, detailed recipe views with customizable serving sizes, nutrition facts, cost analysis, and allergen tracking.",
+    image: "/CalcMenu-Phone-Mock-up.png",
+    tags: [],
+    link: "", // no live link
+    figmaLink:
+      "https://www.figma.com/design/gl6dnLLXAoCnVufH2vzyOx/Calcmenu?t=ZCyDv67bXL9TdBAp-1",
+  },
+  {
+    title: "Shoes One Page Website",
+    description:
+      "A sleek one-page website concept for Nike, highlighting brand storytelling with bold visuals, clean layout, and a modern user-centered design that emphasizes product showcase and testimonials.",
+    image: "/web-portfolio-mockup_1.png",
+    tags: [],
+    link: "", // no live link
+    figmaLink:
+      "https://www.figma.com/design/a1WaR0px3QJaWuozPe3Bkw/Nike-One-Page-Design?node-id=15-82&t=ZCyDv67bXL9TdBAp-1",
+  },
 ];
 
 export default function ProjectsSection() {
@@ -78,7 +98,7 @@ export default function ProjectsSection() {
               className="group block relative bg-white rounded-xl overflow-hidden backdrop-blur-sm border border-gray-200 shadow-lg"
             >
               <Link
-                href={project.link}
+                href={project.link || project.figmaLink || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
@@ -93,7 +113,6 @@ export default function ProjectsSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-white via-white/0 to-transparent transition-transform duration-300 group-hover:scale-105" />
                 </div>
               </Link>
-
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   {project.title}
@@ -112,29 +131,32 @@ export default function ProjectsSection() {
 
                 {/* Buttons Section */}
                 <div className="flex gap-3">
-                  <Link
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200 text-sm font-medium"
-                  >
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                  {/* Only show live button if link exists */}
+                  {project.link && (
+                    <Link
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200 text-sm font-medium"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                    View Live
-                  </Link>
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                      View Live
+                    </Link>
+                  )}
 
-                  {/* Conditionally render Figma button */}
+                  {/* Only show Figma button if figmaLink exists */}
                   {project.figmaLink && (
                     <Link
                       href={project.figmaLink}
