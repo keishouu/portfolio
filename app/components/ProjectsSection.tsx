@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const projects = [
   {
+    title: "Nexa.io",
+    description:
+      "A web design for a fictional SaaS company, showcasing a modern, clean, and user-friendly interface that highlights the company's services and features.",
+    image: "/Nexa.ioThumbnail.png",
+    tags: ["UI/UX Design", "Figma", "Responsive Design"],
+    link: "", // no live link
+    figmaLink:
+      "https://www.figma.com/design/cxxURg73RPPr3TwhBE8SLy/Nexa.io-one-page-website?node-id=97-395&t=oc4MgXmfPK7qzm8l-1",
+  },
+  {
     title: "Lush and Local",
     description:
       "A responsive e-commerce platform designed for all screen sizes, delivering a seamless and engaging shopping experience for fresh, locally sourced products.",
@@ -14,24 +24,6 @@ const projects = [
     link: "https://keishouu.github.io/lushnlocal/index.html",
     figmaLink:
       "https://www.figma.com/design/E8YbHhn36uEmGwCCwGBYYt/Lush---Local-prototype?t=A5iUroHF24mEE5Cs-1",
-  },
-  {
-    title: "Pour Decisions",
-    description:
-      "A fully responsive, online card-based drinking game designed to fit all screen sizes, offering a fun, highly interactive, and engaging experience that can be enjoyed anytime, anywhere with friends.",
-    image: "/PourDecisions.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://keishouu.github.io/pour-decision/",
-    figmaLink:
-      "https://www.figma.com/design/iyeGcjnUdm9W11cGwAl8Ze/Friends-Card-Games---Pour-Decisions?t=Rov4hdWpMLbpq2hp-1",
-  },
-  {
-    title: "MISDesk",
-    description:
-      "An AI-enhanced online ticketing system powered by Gemini AI, designed to streamline concern reporting to MISD staff in Emilio Aguinaldo College Cavite, ensuring faster, smarter, and more efficient issue resolution.",
-    image: "/MISDesk.png",
-    tags: ["React", "Next.js", "SupaBase", "Tailwind CSS", "Gemini AI"],
-    link: "https://eac-misd.vercel.app/",
   },
   {
     title: "Real Estate",
@@ -44,24 +36,42 @@ const projects = [
       "https://www.figma.com/design/8JlGubg6kCnClfmdASYGYq/Real-Estate-Homepage-Revamp?node-id=73-1011&t=muzoR7SHJHVlVSt8-1",
   },
   {
-    title: "Recipe Management System Dashboard",
+    title: "Shoes One Page Website",
+    description:
+      "A sleek one-page website concept for Nike, highlighting brand storytelling with bold visuals, clean layout, and a modern user-centered design that emphasizes product showcase and testimonials.",
+    image: "/web-portfolio-mockup_1.png",
+    tags: ["UI/UX Design", "Figma"],
+    link: "", // no live link
+    figmaLink:
+      "https://www.figma.com/design/a1WaR0px3QJaWuozPe3Bkw/Nike-One-Page-Design?node-id=15-82&t=ZCyDv67bXL9TdBAp-1",
+  },
+  {
+    title: "Pour Decisions",
+    description:
+      "A fully responsive, online card-based drinking game designed to fit all screen sizes, offering a fun, highly interactive, and engaging experience that can be enjoyed anytime, anywhere with friends.",
+    image: "/PourDecisions.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://keishouu.github.io/pour-decision/",
+    figmaLink:
+      "https://www.figma.com/design/iyeGcjnUdm9W11cGwAl8Ze/Friends-Card-Games---Pour-Decisions?t=Rov4hdWpMLbpq2hp-1",
+  },
+  {
+    title: "Recipe Management System",
     description:
       "A responsive recipe management system design featuring a clean dashboard, detailed recipe views with customizable serving sizes, nutrition facts, cost analysis, and allergen tracking.",
     image: "/CalcMenu-Phone-Mock-up.png",
-    tags: [],
+    tags: ["UI/UX Design", "Figma"],
     link: "", // no live link
     figmaLink:
       "https://www.figma.com/design/gl6dnLLXAoCnVufH2vzyOx/Calcmenu?t=ZCyDv67bXL9TdBAp-1",
   },
   {
-    title: "Shoes One Page Website",
+    title: "MISDesk",
     description:
-      "A sleek one-page website concept for Nike, highlighting brand storytelling with bold visuals, clean layout, and a modern user-centered design that emphasizes product showcase and testimonials.",
-    image: "/web-portfolio-mockup_1.png",
-    tags: [],
-    link: "", // no live link
-    figmaLink:
-      "https://www.figma.com/design/a1WaR0px3QJaWuozPe3Bkw/Nike-One-Page-Design?node-id=15-82&t=ZCyDv67bXL9TdBAp-1",
+      "An AI-enhanced online ticketing system powered by Gemini AI, designed to streamline concern reporting to MISD staff in Emilio Aguinaldo College Cavite, ensuring faster, smarter, and more efficient issue resolution.",
+    image: "/MISDesk.png",
+    tags: ["React", "Next.js", "SupaBase", "Tailwind CSS", "Gemini AI"],
+    link: "https://eac-misd.vercel.app/",
   },
 ];
 
@@ -87,7 +97,7 @@ export default function ProjectsSection() {
           Development.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -117,12 +127,14 @@ export default function ProjectsSection() {
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-xs text-gray-600 mb-4">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="text-sm px-3 py-1 bg-blue-50 text-blue-700 rounded-full"
+                      className="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full"
                     >
                       {tag}
                     </span>
