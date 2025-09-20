@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const projects = [
   {
+    title: "Social Media Graphic",
+    description:
+      "A social media graphic designed to highlight AI-driven development, combining modern tech visuals with clear messaging to engage a digital-first audience.",
+    image: "/soc-media-graphic-thumbnail.png",
+    tags: ["Typography", "Figma", "Tech Design"],
+    link: "", // no live link
+    figmaLink:
+      "https://www.figma.com/design/NDfpmxzAr6OIxxsPWDtekU/1902-Media-Graphic?node-id=0-1&t=10DoVhW5UobW6fWd-1",
+  },
+  {
     title: "Nexa.io",
     description:
       "A web design for a fictional SaaS company, showcasing a modern, clean, and user-friendly interface that highlights the company's services and features.",
