@@ -51,7 +51,7 @@ const projects = [
       "A sleek one-page website concept for Nike, highlighting brand storytelling with bold visuals, clean layout, and a modern user-centered design that emphasizes product showcase and testimonials.",
     image: "/web-portfolio-mockup_1.png",
     tags: ["UI/UX Design", "Figma"],
-    link: "", // no live link
+    link: "https://buenorjadev.wixsite.com/nike-trial",
     figmaLink:
       "https://www.figma.com/design/a1WaR0px3QJaWuozPe3Bkw/Nike-One-Page-Design?node-id=15-82&t=ZCyDv67bXL9TdBAp-1",
   },
