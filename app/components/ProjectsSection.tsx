@@ -122,6 +122,7 @@ export default function ProjectsSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
+                data-umami-event={`${project.title}_click`}
               >
                 <div className="aspect-video relative overflow-hidden">
                   <Image
@@ -160,6 +161,7 @@ export default function ProjectsSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200 text-sm font-medium"
+                      data-umami-event={`${project.title}_click`}
                     >
                       <svg
                         className="w-4 h-4"
