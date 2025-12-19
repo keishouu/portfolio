@@ -91,6 +91,7 @@ export default function ContactSection() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-medium text-white"
+                  data-umami-event="{Contact-click}"
                 >
                   <svg
                     className="w-5 h-5"
@@ -120,6 +121,7 @@ export default function ContactSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center gap-3 px-8 py-4 bg-gray-50 hover:bg-gray-100 rounded-2xl border border-gray-200 transition-all duration-300"
+                data-umami-event="{View-Resume}"
               >
                 <svg
                   className="w-5 h-5 text-gray-600"
